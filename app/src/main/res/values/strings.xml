@@ -4,8 +4,8 @@
     <string name="upcoming_events_title">Upcoming events</string>
     <string name="nearby_events_title">Nearby events</string>
     <string name="recommended_events_title">Recommended events</string>
-    <string name="sponsored_events_title">Sponsored events</string>
-    <string name="popular_events_title">Popular events</string>
+    <string name="sponsored_events_title">Popular events</string>
+    <string name="popular_events_title">Sponsored events</string>
     <string name="top10_events_title">Top 10 events</string>
     <string name="new_events_title">New events</string>
 
@@ -48,6 +48,11 @@
     <string name="create_account_email_hint">Email</string>
     <string name="create_account_password_hint">Password</string>
     <string name="create_account_confirm_password_hint">Confirm Password</string>
+
+    <string name="settings_text_text_size">Text size</string>
+    <string name="settings_text_dark_mode">Dark mode</string>
+    <string name="settings_text_notifications">Enable notifications</string>
+    <string name="settings_text_location">Enable location</string>
 
     <string name="nav_home_title">Home</string>
     <string name="nav_group_chats_title">Group chats</string>
