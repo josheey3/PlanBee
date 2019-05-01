@@ -20,7 +20,7 @@ public class GroupChatsActivity extends AppCompatActivity {
 
     public static final String EXTRA_POS = "com.scrum.plan.planbee.IMG_POS";
 
-    private ImageButton btnOpenNav;
+    private ImageButton btnOpenNav, btnOpenSettings;
     private NavigationView navView;
     private DrawerLayout drawLayout;
 
@@ -78,6 +78,15 @@ public class GroupChatsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 drawLayout.openDrawer(Gravity.LEFT);
+            }
+        });
+
+        btnOpenSettings = findViewById(R.id.btn_open_settings);
+        btnOpenSettings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(GroupChatsActivity.this, SettingsActivity.class);
+                startActivity(intent);
             }
         });
 

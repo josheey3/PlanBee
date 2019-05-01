@@ -116,9 +116,6 @@ public class MainActivity extends AppCompatActivity {
             count++;
         }
 
-
-
-
         navView = findViewById(R.id.nav_view);
         navView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override

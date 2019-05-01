@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Gravity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -44,8 +45,6 @@ public class MessageListActivity extends AppCompatActivity {
         chat = chatCollectionFunctions.generateChat(chatID);
         messageList = chat.getMessages();
 
-      ;
-
         btnSend = findViewById(R.id.button_chatbox_send);
         txtSentMessage = findViewById(R.id.edittext_chatbox);
 
@@ -55,6 +54,38 @@ public class MessageListActivity extends AppCompatActivity {
         mMessageRecycler.setLayoutManager(new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false));
         txtTitle = (TextView) findViewById(R.id.text_chat_title);
         txtTitle.setText(chat.getGroupName());
+
+        navView = findViewById(R.id.nav_view);
+        navView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(MenuItem navItem) {
+                int itemId = navItem.getItemId();
+                switch (itemId) {
+                    case R.id.nav_home:
+                        startActivity(new Intent(MessageListActivity.this, MainActivity.class));
+                        break;
+                    case R.id.nav_login:
+                        startActivity(new Intent(MessageListActivity.this, LoginActivity.class));
+                        break;
+                    case R.id.nav_create_account:
+                        startActivity(new Intent(MessageListActivity.this, CreateAccountActivity.class));
+                        break;
+                    case R.id.nav_group_chats:
+                        startActivity(new Intent(MessageListActivity.this, GroupChatsActivity.class));
+                        break;
+                    case R.id.nav_map:
+                        startActivity(new Intent(MessageListActivity.this, MapActivity.class));
+                        break;
+                    case R.id.nav_my_events:
+                        startActivity(new Intent(MessageListActivity.this, MyEventsActivity.class));
+                        break;
+                    case R.id.nav_calendar:
+                        startActivity(new Intent(MessageListActivity.this, CalendarActivity.class));
+                        break;
+                }
+                return false;
+            }
+        });
 
         drawLayout = findViewById(R.id.drawer_layout);
         btnOpenNav = findViewById(R.id.btn_open_nav);

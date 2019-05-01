@@ -24,7 +24,7 @@ public class MyEventsActivity extends AppCompatActivity {
     private MyEventsAdapter adapter;
     private NavigationView navView;
     private DrawerLayout drawLayout;
-    private ImageButton btnOpenNav;
+    private ImageButton btnOpenNav, btnOpenSettings;
 
     private String[] eventTitles = new String[]{"BPI Group Meeting", "Drinks with the bois", "Band rehearsal", "Scrum 4 due", "Cinema", "Climbing", "Paint balling", "D&D", "BU Guest Lecture", "Team meeting"};
     private int[] eventIcons = new int[]{R.drawable.chat_bpi, R.drawable.chat_default, R.drawable.chat_trumpet, R.drawable.chat_scrum, R.drawable.chat_cinema, R.drawable.chat_climbing, R.drawable.chat_paintballing, R.drawable.chat_board_game, R.drawable.chat_bu, R.drawable.chat_11};
@@ -76,6 +76,15 @@ public class MyEventsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 drawLayout.openDrawer(Gravity.LEFT);
+            }
+        });
+
+        btnOpenSettings = findViewById(R.id.btn_open_settings);
+        btnOpenSettings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MyEventsActivity.this, SettingsActivity.class);
+                startActivity(intent);
             }
         });
 

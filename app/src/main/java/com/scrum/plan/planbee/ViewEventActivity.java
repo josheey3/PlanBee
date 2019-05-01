@@ -21,7 +21,7 @@ public class ViewEventActivity extends AppCompatActivity {
 
     private NavigationView navView;
     private DrawerLayout drawLayout;
-    private ImageButton btnOpenNav;
+    private ImageButton btnOpenNav, btnOpenSettings;
 
     private TextView txtEventTitle;
     private TextView txtDate;
@@ -105,6 +105,14 @@ public class ViewEventActivity extends AppCompatActivity {
             }
         });
 
+        btnOpenSettings = findViewById(R.id.btn_open_settings);
+        btnOpenSettings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ViewEventActivity.this, SettingsActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
