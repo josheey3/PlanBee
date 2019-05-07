@@ -17,8 +17,8 @@ public class EventCollection {
 
     public void generateEvents() {
                 events.add(new Event("BPI Group Meeting",
-                        "1pm March 3rd",
-                        1551618000000L,
+                        "1pm May 3rd",
+                        1556888400000L,
                         "Talbot Campus, Fern Barrow, Poole BH12 5BB",
                         "Bob Green",
                         new Group(0, "BPI group"),
@@ -27,8 +27,8 @@ public class EventCollection {
                         R.drawable.chat_bpi,
                         0));
                 events.add(new Event("Drinks with the bois",
-                        "9pm March 3rd",
-                        1551646800000L,
+                        "9pm May 3rd",
+                        1556917200000L,
                         "Frankenstien Pub, Reading, R31 2XQ",
                         "Marry Shelley",
                         new Group(1, "Chat 5"),
@@ -37,8 +37,8 @@ public class EventCollection {
                         R.drawable.chat_default,
                         1));
                 events.add(new Event("Band rehearsal",
-                        "2pm March 4th",
-                        1551708000000L,
+                        "2pm May 4th",
+                        1556978400000L,
                         "Music room, Middlesbrough University, Middlesbrough, TS4 3JS",
                         "Rachel Brown",
                         new Group(2, "The instruments"),
@@ -47,8 +47,8 @@ public class EventCollection {
                         R.drawable.chat_trumpet,
                         2));
                 events.add(new Event("Scrum 4 Due",
-                        "12pm March 7th",
-                        1551960000000L,
+                        "12pm May 7th",
+                        1557187200000L,
                         "Brightspace",
                         "Mitchell Covern",
                         new Group(3, "Scrummers"),
@@ -57,8 +57,8 @@ public class EventCollection {
                         R.drawable.chat_scrum,
                         3));
                 events.add(new Event("Cinema",
-                        "7pm March 8th",
-                        1552071600000L,
+                        "7pm May 8th",
+                        1557342000000L,
                         "Odean, 2 Manor Road, Leeds, LS18 4DX",
                         "Dave Powers",
                         new Group(4, "Cinema crew"),
@@ -67,8 +67,8 @@ public class EventCollection {
                         R.drawable.chat_cinema,
                         4));
                 events.add(new Event("Climbing",
-                        "5pm March 15th",
-                        1552669200000L,
+                        "5pm May 15th",
+                        1557939600000L,
                         "The Project, 3 Cameron St, Glasgow, G52 4JH",
                         "Climber co",
                         new Group(5, "BU Climbing Club"),
@@ -77,8 +77,8 @@ public class EventCollection {
                         R.drawable.chat_climbing,
                         5));
                 events.add(new Event("Paint balling",
-                        "1pm March 22nd",
-                        1553259600000L,
+                        "1pm May 22nd",
+                        1558530000000L,
                         "BU Paintball,8 Burleigh Rd, Ringwood, BU2 4NH",
                         "BU Paintball",
                         new Group(6, "Paint balling"),
@@ -87,8 +87,8 @@ public class EventCollection {
                         R.drawable.chat_paintballing,
                         6));
                 events.add(new Event("D&D",
-                        "8pm March 23rd",
-                        1553371200000L,
+                        "8pm May 23rd",
+                        1558641600000L,
                         "Talbot Campus, Fern Barrow, Poole BH12 5BB",
                         "Jonno Clarke",
                         new Group(7, "Board game cafe"),
@@ -97,8 +97,8 @@ public class EventCollection {
                         R.drawable.chat_board_game,
                         7));
                 events.add(new Event("BU Guest Lecture",
-                        "11am March 25th",
-                        1553511600000L,
+                        "11am May 25th",
+                        1558782000000L,
                         "Talbot Campus, Fern Barrow, Poole BH12 5BB",
                         "Gernut Leechen",
                         new Group(8, "Bournemouth University"),
@@ -118,7 +118,7 @@ public class EventCollection {
                         9));
                 events.add(new Event("Toy Story 4",
                         "7pm March 29th",
-                        1553886000000L,
+                        155388600000L,
                         "Odean, 2 Manor Road, Leeds, LS18 4DX",
                         "Dave Powers",
                         new Group(4, "Cinema crew"),
@@ -178,7 +178,7 @@ public class EventCollection {
                         15));
                 events.add(new Event("Litter pick",
                         "12pm April 8th",
-                        1555258016L,
+                        1555258016000L,
                         "Bournemouth Beach, Bournemouth, BH2 5AA",
                         "Ken Batchelder",
                         new Group(15, "Pick world"),
@@ -188,7 +188,7 @@ public class EventCollection {
                         16));
                 events.add(new Event("Avartar 2",
                         "7pm April 8th",
-                        1554750000L,
+                        1554750000000L,
                         "Odean, 2 Manor Road, Leeds, LS18 4DX",
                         "Jeremie Malitrott",
                         new Group(4, "Cinema crew"),
@@ -198,7 +198,7 @@ public class EventCollection {
                         17));
                 events.add(new Event("Writing Club",
                         "8am April 12th",
-                        1555056000L,
+                        1555056000000L,
                         "Library, Talbot Campus, Fern Barrow, Poole BH12 5BB",
                         "Melesa Walklott",
                         new Group(16, "Writing Club"),
@@ -208,7 +208,7 @@ public class EventCollection {
                         18));
                 events.add(new Event("TED Talk BU",
                         "11am April 12th",
-                        1555066800L,
+                        1555066800000L,
                         "LEES, Talbot Campus, Fern Barrow, Poole BH12 5BB",
                         "Antony Cables",
                         new Group(17, "TED BU April 12th"),
@@ -219,7 +219,7 @@ public class EventCollection {
                         19));
                 events.add(new Event("Cocktail making",
                         "9pm April 12th",
-                        1555102800L,
+                        1555102800000L,
                         "Dylans, Talbot Campus, Fern Barrow, Poole BH12 5BB",
                         "Ashil Chant",
                         new Group(18, "Cocktail Concoctioners"),
@@ -230,7 +230,7 @@ public class EventCollection {
                         20));
                 events.add(new Event("Pie eating contest",
                         "9pm April 12th",
-                        1555102800L,
+                        1555102800000L,
                         "Dylans, Talbot Campus, Fern Barrow, Poole BH12 5BB",
                         "Park Pudner",
                         new Group(19, "Pie Contestants"),
@@ -251,7 +251,7 @@ public class EventCollection {
                 ));
                 events.add(new Event("BU Church",
                         "9pm April 13th",
-                        1555182000L,
+                        1555182000000L,
                         "Lansdowne Rd, Bournemouth BH1 1SB",
                         "Kaspar Josefsen",
                         new Group(21, "Christian Union BU"),
@@ -262,7 +262,7 @@ public class EventCollection {
                 ));
                 events.add(new Event("Library reading",
                         "5pm April 14th",
-                        1555261200L,
+                        1555261200000L,
                         "Library, Talbot Campus, Fern Barrow, Poole BH12 5BB",
                         "Leann Fernyhough",
                         new Group(22, "BU Reading Society"),
@@ -273,7 +273,7 @@ public class EventCollection {
                 ));
                 events.add(new Event("Bloom",
                         "10am April 15th",
-                        1555322400L,
+                        1555322400000L,
                         "Bournemouth Parks - Lower Gardens, Westover Road, Bournemouth BH2 5AH",
                         "Eolanda Hawkshaw",
                         new Group(23, "Bournemouth Gardeners"),
@@ -284,7 +284,7 @@ public class EventCollection {
                 ));
                 events.add(new Event("BU Surf club",
                         "10am April 20th",
-                        1555754400L,
+                        1555754400000L,
                         "Bournemouth Beach, Bournemouth, BH2 5AA",
                         "Dru Yanez",
                         new Group(24, "BU Surf club"),
@@ -295,7 +295,7 @@ public class EventCollection {
                 ));
                 events.add(new Event("Red arrows",
                         "3pm April 20th",
-                        1555772400L,
+                        1555772400000L,
                         "Bournemouth, BH1 3DU",
                         "Kathrine Dusting",
                         new Group(25, "Red Arrows Historical Group"),
@@ -306,7 +306,7 @@ public class EventCollection {
                 ));
                 events.add(new Event("AFC Bournemouth",
                         "2pm April 20th",
-                        1555768800L,
+                        1555768800000L,
                         "Vitality Stadium, Bournemouth BH7 7AF",
                         "Eddie Colam",
                         new Group(11, "The Lads"),
@@ -329,8 +329,8 @@ public class EventCollection {
             switch (eventID) {
                 case 0:
                     events.add(new Event("BPI Group Meeting",
-                            "1pm March 3rd",
-                            1551618000000L,
+                            "1pm May 3rd",
+                            1556888400L,
                             "Talbot Campus, Fern Barrow, Poole BH12 5BB",
                             "Bob Green",
                             new Group(0, "BPI group"),
@@ -341,8 +341,8 @@ public class EventCollection {
                     break;
                 case 1:
                     events.add(new Event("Drinks with the bois",
-                            "9pm March 3rd",
-                            1551646800000L,
+                            "9pm May 3rd",
+                            1556917200L,
                             "Frankenstien Pub, Reading, R31 2XQ",
                             "Marry Shelley",
                             new Group(1, "Chat 5"),
