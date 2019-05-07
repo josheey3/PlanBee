@@ -65,7 +65,7 @@ public class GroupChatsActivity extends AppCompatActivity {
                         startActivity(new Intent(GroupChatsActivity.this, CalendarActivity.class));
                         break;
                     case R.id.nav_my_events:
-                        startActivity(new Intent(GroupChatsActivity.this, CalendarActivity.class));
+                        startActivity(new Intent(GroupChatsActivity.this, MyEventsActivity.class));
                         break;
                 }
                 return false;

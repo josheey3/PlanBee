@@ -63,12 +63,12 @@
             android:layout_height="250dp"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            app:compactCalendarBackgroundColor="#ffe95451"
-            app:compactCalendarCurrentDayBackgroundColor="#B71C1C"
-            app:compactCalendarCurrentSelectedDayBackgroundColor="#E57373"
-            app:compactCalendarMultiEventIndicatorColor="#fff"
+            app:compactCalendarBackgroundColor= "@color/sch_yellow"
+            app:compactCalendarCurrentDayBackgroundColor="@color/sch_white"
+            app:compactCalendarCurrentSelectedDayBackgroundColor="@color/sch_weakGreen"
+            app:compactCalendarMultiEventIndicatorColor="@color/sch_blackishYellow"
             app:compactCalendarTargetHeight="250dp"
-            app:compactCalendarTextColor="#fff"
+            app:compactCalendarTextColor="@color/sch_black"
             app:compactCalendarTextSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -84,8 +84,10 @@
             android:background="@color/sch_weakGreen"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/compactcalendar_view">
+            app:layout_constraintTop_toBottomOf="@+id/compactcalendar_view"
+            app:layout_constraintVertical_bias="1.0">
 
             <TextView
                 android:id="@+id/calendarDate"
@@ -113,19 +115,6 @@
                 app:layout_constraintStart_toEndOf="@id/calendarDate"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <com.google.android.gms.maps.MapView
-                android:id="@+id/mapView3"
-                android:layout_width="235dp"
-                android:layout_height="192dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="21dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="195dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/scrlCal"
-                app:layout_constraintTop_toBottomOf="@+id/calendarText" />
-
             <ScrollView
 
                 android:id="@+id/scrlCal"
@@ -137,7 +126,7 @@
                 android:layout_marginBottom="8dp"
                 android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/mapView3"
+                app:layout_constraintEnd_toStartOf="@+id/imgMap"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/calendarDate">
 
@@ -156,47 +145,51 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
+                android:layout_marginTop="2dp"
                 android:layout_marginEnd="12dp"
-                android:layout_marginBottom="12dp"
-                app:layout_constraintBottom_toTopOf="@+id/btnCalConfirm"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/scrlCal" />
+                app:layout_constraintStart_toEndOf="@+id/scrlCal"
+                app:layout_constraintTop_toBottomOf="@+id/imgMap" />
 
             <Button
                 android:id="@+id/btnCalConfirm"
                 android:layout_width="172dp"
                 android:layout_height="63dp"
-                android:layout_marginStart="9dp"
-                android:layout_marginEnd="1dp"
-                android:layout_marginBottom="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
                 android:text="@string/calendar_Confirm"
-                app:layout_constraintBottom_toTopOf="@+id/btnCalMoreInfo"
-                app:layout_constraintEnd_toStartOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/scrlCal" />
+                app:layout_constraintStart_toEndOf="@+id/scrlCal"
+                app:layout_constraintTop_toBottomOf="@+id/calendar_time" />
 
             <ImageView
                 android:id="@+id/imgCalBee"
                 android:layout_width="63dp"
                 android:layout_height="63dp"
-                android:layout_marginEnd="12dp"
-                android:layout_marginBottom="12dp"
-                app:layout_constraintBottom_toTopOf="@+id/btnCalMoreInfo"
-                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toEndOf="@+id/btnCalConfirm"
+                app:layout_constraintTop_toBottomOf="@+id/calendar_time"
                 app:srcCompat="@mipmap/ic_launcher" />
 
             <Button
                 android:id="@+id/btnCalMoreInfo"
                 android:layout_width="246dp"
                 android:layout_height="48dp"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="12dp"
-                android:layout_marginBottom="12dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
                 android:text="@string/calendar_More_Info"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/scrlCal"
+                app:layout_constraintTop_toBottomOf="@+id/btnCalConfirm" />
+
+            <ImageView
+                android:id="@+id/imgMap"
+                android:layout_width="250dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/scrlCal"/>
+                app:layout_constraintTop_toBottomOf="@+id/calendarText"
+                app:srcCompat="@drawable/map" />
 
 
         </android.support.constraint.ConstraintLayout>

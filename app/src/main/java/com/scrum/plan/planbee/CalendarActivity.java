@@ -18,6 +18,8 @@ import android.widget.TextView;
 
 import com.github.sundeepk.compactcalendarview.CompactCalendarView;
 import com.github.sundeepk.compactcalendarview.domain.Event;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.MapView;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -34,9 +36,11 @@ CalendarActivity extends AppCompatActivity {
     private TextView txtCalendar;
     private TextView txtEventTitle;
     private TextView txtTime;
+
     private Button btnConfim;
     private Button btnMoreInfo;
     private ImageView imgBee;
+    private ImageView imgMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,6 +98,8 @@ CalendarActivity extends AppCompatActivity {
         btnConfim = findViewById(R.id.btnCalConfirm);
         btnMoreInfo = findViewById(R.id.btnCalMoreInfo);
         imgBee = findViewById(R.id.imgCalBee);
+        imgMap = findViewById(R.id.imgMap);
+
 
         calendar.setUseThreeLetterAbbreviation(true);
 
@@ -104,7 +110,7 @@ CalendarActivity extends AppCompatActivity {
         events.generateEvents();
 
         for (com.scrum.plan.planbee.Event setEvent : events.getEvents()) {
-            Event event = new Event(Color.RED, setEvent.getEpoch(), setEvent.getName());
+            Event event = new Event(Color.BLACK, setEvent.getEpoch(), setEvent.getName());
             calendar.addEvent(event);
         }
 
@@ -120,7 +126,8 @@ CalendarActivity extends AppCompatActivity {
                     final int selectedIndex = events.getAllDates().indexOf(date);
                     com.scrum.plan.planbee.Event selectedEvent = events.getEvents().get(selectedIndex);
                     txtEventTitle.setText(selectedEvent.getName());
-                    txtTime.setText(selectedEvent.getDate());
+                    txtTime.setText(selectedEvent.getLocation() + "\n" +
+                            selectedEvent.getDate());
                     final ArrayList<String> names = selectedEvent.getAttendees().getNames();
 
 
@@ -133,6 +140,7 @@ CalendarActivity extends AppCompatActivity {
                     imgBee.setVisibility(View.INVISIBLE);
                     btnConfim.setVisibility(View.VISIBLE);
                     btnMoreInfo.setVisibility(View.VISIBLE);
+                    imgMap.setVisibility(View.VISIBLE);
 
                     TextView textView = new TextView(context);
                     textView.setText("Current Swarm");
@@ -172,12 +180,17 @@ CalendarActivity extends AppCompatActivity {
                     }
 
 
+
+
+
+
                 } else {
                     txtEventTitle.setText("No Events");
                     txtTime.setText("");
                     imgBee.setVisibility(View.INVISIBLE);
                     btnConfim.setVisibility(View.INVISIBLE);
                     btnMoreInfo.setVisibility(View.INVISIBLE);
+                    imgMap.setVisibility(View.INVISIBLE);
 
                     linearLayout.setVisibility(View.INVISIBLE);
                 }
@@ -198,6 +211,7 @@ CalendarActivity extends AppCompatActivity {
         btnConfim.setVisibility(View.INVISIBLE);
         btnMoreInfo.setVisibility(View.INVISIBLE);
         imgBee.setVisibility(View.INVISIBLE);
+        imgMap.setVisibility(View.INVISIBLE);
 
 
     }

@@ -36,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="start"
                 android:padding="25dp"
-                android:textColor="#000"
+                android:textColor="@color/sch_blackishYellow"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="@+id/chat_icon"
                 app:layout_constraintStart_toEndOf="@+id/chat_icon"

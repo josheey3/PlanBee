@@ -4,6 +4,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/sch_brown"
     android:fitsSystemWindows="true">
 
     <!-- Main content of the screen -->
@@ -37,6 +38,7 @@
                 android:layout_marginTop="8dp"
                 android:text="@string/home_title"
                 android:textSize="30sp"
+                android:textColor="@color/sch_whiteishBrown"
                 app:layout_constraintBottom_toTopOf="@+id/upcoming_events_text"
                 app:layout_constraintEnd_toStartOf="@+id/btn_open_settings"
                 app:layout_constraintStart_toEndOf="@+id/btn_open_nav"
@@ -59,11 +61,13 @@
                 android:layout_marginStart="2dp"
                 android:layout_marginTop="2dp"
                 android:text="@string/upcoming_events_title"
+                android:textColor="@color/sch_whiteishYellow"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/btn_open_nav" />
 
             <TextView
                 android:id="@+id/nearby_events_text"
+                android:textColor="@color/sch_whiteishYellow"
                 android:layout_width="380dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
@@ -74,6 +78,7 @@
 
             <TextView
                 android:id="@+id/recommended_events_text"
+                android:textColor="@color/sch_whiteishYellow"
                 android:layout_width="380dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
@@ -84,6 +89,7 @@
 
             <TextView
                 android:id="@+id/sponsored_events_text"
+                android:textColor="@color/sch_whiteishYellow"
                 android:layout_width="380dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
@@ -94,6 +100,7 @@
 
             <TextView
                 android:id="@+id/popular_events_text"
+                android:textColor="@color/sch_whiteishYellow"
                 android:layout_width="380dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
@@ -104,6 +111,7 @@
 
             <TextView
                 android:id="@+id/top10_events_text"
+                android:textColor="@color/sch_whiteishYellow"
                 android:layout_width="380dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
@@ -114,6 +122,7 @@
 
             <TextView
                 android:id="@+id/new_events_text"
+                android:textColor="@color/sch_whiteishYellow"
                 android:layout_width="380dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"

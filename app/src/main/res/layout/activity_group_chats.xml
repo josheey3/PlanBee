@@ -4,6 +4,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/sch_brown"
     android:fitsSystemWindows="true">
 
     <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -32,6 +33,7 @@
             android:layout_marginTop="8dp"
             android:text="@string/group_chats_title"
             android:textSize="30sp"
+            android:textColor="@color/sch_whiteishBrown"
             app:layout_constraintEnd_toStartOf="@+id/btn_open_settings"
             app:layout_constraintStart_toEndOf="@+id/btn_open_nav"
             app:layout_constraintTop_toTopOf="parent" />

@@ -8,4 +8,9 @@
     <color name="sch_yellow">#E5F94A</color>
     <color name="sch_brown">#7A6263</color>
     <color name="sch_weakBrown">#CED097</color>
+    <color name="sch_black">#000000</color>
+    <color name="sch_white">#FFFFFF</color>
+    <color name="sch_blackishYellow">#2A2E0E</color>
+    <color name="sch_whiteishYellow">#FCFEEE</color>
+    <color name="sch_whiteishBrown">#F2F0F0</color>
 </resources>
