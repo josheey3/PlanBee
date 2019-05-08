@@ -26,8 +26,6 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView upcomingView, nearbyView, recommendedView, sponsoredView, popularView, top10View, newView;
     private EventAdapter adapterUpcoming, adapterNearby, adapterRecommended, adapterSponsored, adapterMusic, adapterPopular, adapterTop;
 
-
-
     //Arrays for the title and image of each item in the event scroller
     private int[] upcomingImages = new int[]{R.drawable.toy_story_4_icon, R.drawable.litter, R.drawable.avatar, R.drawable.write, R.drawable.ted, R.drawable.cocktail, R.drawable.pie};
     private String[] upcomingTitles = new String[]{"Toy Story 4", "Litter pick", "Avatar 2", "Writing Club", "TED Talk BU", "Cocktail making", "Pie eating contest"};
